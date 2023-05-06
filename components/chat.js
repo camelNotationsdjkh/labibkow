@@ -2,74 +2,139 @@ import styles from "../styles/chat.module.css"
 import Image from "next/image"
 import Typed from 'typed.js';
 import { useRef, useEffect, useState } from "react";
-import {dict} from '../public/dict.js';
+import {dict} from '../public/home/dict.js';
 
 
 export default function Chat(){
-    let [strArr, setArr] = useState(['Hello, world!', 'Welcome to my website 🐪 !']);
+    let curKey = "Who am I?";
+    let [strArr, setArr] = useState(dict[curKey].theStrArr); //State that keeps track of what Typed obj should type
+    let [isBtnAct, setBtnAct] = useState(0); //Sets the button to active or not
     let sliderEle = [];
+    let disImg = [];
     const typedRef = useRef(null);
+    const resWin = useRef(null);
 
     //Iterate through key values in dictionary
     for(let valKey in dict){
-        //sliderEle.push(<div key={valKey} onClick={updateStr}>{valKey}</div>)
+        //The boolean condition that checks what button is
+        //Currently active
+        const isActive = (strArr === dict[valKey].theStrArr);
+
         sliderEle.push(
-            <BtnComp key={valKey} keyVal={valKey} onClick={() => {
-                setArr(dict[valKey].theStrArr)
+            <BtnComp key={valKey} keyVal={valKey} isActive={isActive} onClick={() => {
+                setArr(dict[valKey].theStrArr);
+                curKey = valKey;
             }} />
         );
     }
 
+    //Init the disImg
+    disImg.push(
+        <ImgComp key={curKey} caption={dict["Who am I?"].imgArr[0][1]} theSrc={dict["Who am I?"].imgArr[0][0]} />
+    )
+
+
+    /*Use effect hook is used for adding dynamic feautres
+    Like API fetch, DOM mnipulation, and setting up event listeners.
+    We have to use the hook here because strArr state changes and 
+    Typed is a dynamic component that changes the DOM after rendering*/
     useEffect(() => {
         const options = {
           strings: strArr,
-          typeSpeed: 50,
-          backSpeed: 30,
-          loop: false
+          typeSpeed: 20,
+          backSpeed: 20,
+          loop: false,
+          fadeOut: true,
+          contentType: 'html'
         };
         
         const typed = new Typed(typedRef.current, options);
+    
+        
+        //Re-size the window based on response length
+        if(dict[strArr]){
+            resWin.current.style.minHeight = `${resWin.current.offsetHeight + dict[strArr].resHeight}px`;
+            disImg = []; //Reset the array
+
+            for(let i = 0; i < dict[strArr].imgArr.length; i++){
+                disImg.push(
+                    <ImgComp caption={dict[curKey].imgArr[i][1]} theSrc={dict[curKey].imgArr[i][1]} />
+                )
+            }
+
+        }
       
         return () => {
           typed.destroy();
         };
+
+
     }, [strArr]);
 
     return (
         <>
         <div className={styles.flexDis}>
-            <div id={styles.response}>
+            <div id={styles.response} ref={resWin}>
                 <div ref={typedRef}></div>
                 
             </div>
             <div id={styles.imgSlide}>
-                <Image id={styles.displayImg} 
-                src={require("../public/profile.jpg")}
-                alt="Github Logo with link to my github"
-                width={340}
-                height={340} />
+                {disImg}
             </div>
+
         </div>
 
         <div className={styles.flexCon}>
+            <div className={`${styles.btnLeft} ${styles.btnArrow} ${(isBtnAct <= 0)? styles.hidden: ''}`} >
+            <Image id={styles.displayImg} 
+                src={require("../public/home/arrowLeft.svg")}
+                alt="Left arrow"
+                width={30}
+                height={30} onClick={() => {
+                    setBtnAct(prev => {
+                        return prev - 1;
+                    });
+                    console.log(isBtnAct);
+                }}/>
+            </div>
             <div className={styles.slider}>
                 {sliderEle}
-                <Image id={styles.sliderBtn} 
-                src={require("../public/arrowRight.svg")}
-                alt="Github Logo with link to my github"
-                width={44}
-                height={44} />
             </div>
-            
+            <div className={`${styles.btnRight} ${styles.btnArrow} ${(isBtnAct >= 3)? styles.hidden: ''}`}>
+            <Image id={styles.displayImg} 
+                src={require("../public/home/arrowRight.svg")}
+                alt="Right arrow"
+                width={30}
+                height={30} onClick={() => {
+                    setBtnAct(prev => {
+                        return prev + 1;
+                    });
+                    console.log(isBtnAct);
+                }}/>
+            </div>
         </div>
         </>
     )
 }
 
-function BtnComp({ keyVal, onClick }){
+
+function ImgComp({caption, theSrc="profile2"}){
+    return(
+        <>
+            <Image id={styles.displayImg} 
+                    src={require(`../public/home/${theSrc}.png`)}
+                    alt={caption}
+                    width={340}
+                    height={340} />
+            <p>{caption}</p>
+        </>
+    )
+}
+
+function BtnComp({ keyVal, onClick, isActive }){
     return (
         <>
-            <div onClick={onClick}>{keyVal}</div>
+            <div className={`${isActive? styles.btnActive: ''}`} onClick={onClick}>{keyVal}</div>
         </>
     )
 }

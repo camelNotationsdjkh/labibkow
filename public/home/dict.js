@@ -1,0 +1,87 @@
+const text1 = "A picture of me at the Beach. The sun was in my eyes a bit in the photo, which is why I am squinting!";
+const defaultT = [["profile2", text1]];
+
+class dictComp{
+    constructor(theStrArr, imgArr = defaultT, resHeight = 500){
+        this.theStrArr = theStrArr;
+        this.imgArr = imgArr;
+        this.resHeight = resHeight;
+    }
+}
+
+//Creating the dictComp
+const comp1 = new dictComp(
+    ['Hello, world!', 'Welcome to my website 🐪 !', 
+    "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam eveniet eligendi sapiente ipsa dolorum sequi, doloremque alias ipsam tempore? Consectetur aliquid, dolores eius repudiandae quasi possimus amet velit a neque!"]
+);
+
+const comp2 = new dictComp(
+    ["My favourite color is blue", "My favourite color is red"],
+)
+
+const comp3 = new dictComp(
+    ["I want to make a massive garden"],
+    
+)
+
+
+const comp4 = new dictComp(
+    ["My favourite animal is the pericon falcon"],
+)
+
+
+const comp5 = new dictComp(
+    ["None lmao"],
+)
+
+const comp6 = new dictComp(
+    ["Wonder"],
+    
+)
+
+const comp7 = new dictComp(
+    ["No I don't have any pets rn but I did at a time have pet fish. A whole miniature ecosystem in my living when I was 7 years old. But no one gave me the memo that it's possible to over feed them.", "So one fateful morning, I woke to discover that all 12 or so fish in the tank had died. They all recieved proper burials in my backyard."],
+    
+)
+
+const comp8 = new dictComp(
+    ["I study at the University of British Columbia, Vancouver Campus. I am currenty enrolled in my third year as in the Electrical Engineering program as a co-op student.<br><br> I expect my degree to take 5 years to finish with co-op, so I am set to graduate in 2025-26! "],
+    
+)
+
+const comp9 = new dictComp(
+    ["My favourite class? Oh that's a tough one, since UBC engineering has many challenging, but thought-provoking classes that delve deep into the fundamentals of engineering. I have genuienly found every meaningful (abeit quite tough at times!), so it's diffult to name a single favourite.<br><br> Instead, here's my top 3: <ul><li><b>Math 256: Differential Equations</b></li><li><b>Elec 221: Signals and Systems</b></li><li><b>CPSC 259: Computer Science for Electrical Engineering</b></li></ul>"],
+    defaultT,
+    700
+)
+
+const comp10 = new dictComp(
+    ["My software skills include. Lmao none, I just use chatGPT. Check out <a href='/projects'>Projects for more details</a>"],
+    defaultT,
+    700
+)
+
+
+
+
+// Exporting the actual dict
+export const dict = {
+    "Who am I?": comp1,
+    "Favourite Color": comp2,
+    "Future goals": comp3,
+    "Favourite animal": comp4,
+    "Workplace experience": comp5,
+    "Best book I've read": comp6,
+    "Any Pets?": comp7,
+    "Where do you study?": comp8,
+    "Favourite classes": comp9,
+    "Software skills": comp10,
+    "Hardware skills": comp10,
+    "Your proudest achievement?": comp10,
+    "Favourite show": comp10,
+    "Did you always know you wanted to do engineering?": comp10,
+    "Hobbies?": comp10,
+    "How can I contact you?": comp10,
+    "Favourite thing about UBC?": comp10,
+    "Favourite music": comp10,
+}
