@@ -1,11 +1,10 @@
 const text1 = "A picture of me at the Beach. The sun was in my eyes a bit in the photo, which is why I am squinting!";
-const defaultT = [["profile2", text1]];
+const defaultT = [["profile2.png", text1]];
 
 class dictComp{
-    constructor(theStrArr, imgArr = defaultT, resHeight = 500){
+    constructor(theStrArr, imgArr = defaultT){
         this.theStrArr = theStrArr;
         this.imgArr = imgArr;
-        this.resHeight = resHeight;
     }
 }
 
@@ -26,7 +25,11 @@ const comp3 = new dictComp(
 
 
 const comp4 = new dictComp(
-    ["My favourite animal is the pericon falcon"],
+    ["I have a weak spot for ridiculously fast animals. Which is why the <b>peregrine falcon</b> and <b>cheetah</b> are my absolute favorite animals. It baffles me how evolutionary fine-tuned these two animals are to achieve top speeds of 390 km/hr and 100 km/hr respectively. ^1000", "Octopuses are a close second — I am fascinated by how smart these nine brained (yes you read that right, nine brained!) creatures are. Not to mention how some octopuses can change the color+texture of their skin to almost perfectly mimic its environment. They are just so cool! ^1000"],
+    [
+        ["pere.jpg", "Fastest animal in the world: the peregrine falcon"],
+        ["cheetah.jpg", "Fastest land animals in the world: the cheetah"]
+    ]
 )
 
 
@@ -52,13 +55,11 @@ const comp8 = new dictComp(
 const comp9 = new dictComp(
     ["My favourite class? Oh that's a tough one, since UBC engineering has many challenging, but thought-provoking classes that delve deep into the fundamentals of engineering. I have genuienly found every meaningful (abeit quite tough at times!), so it's diffult to name a single favourite.<br><br> Instead, here's my top 3: <ul><li><b>Math 256: Differential Equations</b></li><li><b>Elec 221: Signals and Systems</b></li><li><b>CPSC 259: Computer Science for Electrical Engineering</b></li></ul>"],
     defaultT,
-    700
 )
 
 const comp10 = new dictComp(
     ["My software skills include. Lmao none, I just use chatGPT. Check out <a href='/projects'>Projects for more details</a>"],
-    defaultT,
-    700
+    defaultT
 )
 
 

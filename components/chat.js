@@ -3,16 +3,17 @@ import Image from "next/image"
 import Typed from 'typed.js';
 import { useRef, useEffect, useState } from "react";
 import {dict} from '../public/home/dict.js';
+import { createRoot } from 'react-dom/client';
 
 
 export default function Chat(){
-    let curKey = "Who am I?";
+    let [curKey, setKey] = useState("Who am I?");
     let [strArr, setArr] = useState(dict[curKey].theStrArr); //State that keeps track of what Typed obj should type
     let [isBtnAct, setBtnAct] = useState(0); //Sets the button to active or not
     let sliderEle = [];
     let disImg = [];
     const typedRef = useRef(null);
-    const resWin = useRef(null);
+    const imgRef = useRef(null);
 
     //Iterate through key values in dictionary
     for(let valKey in dict){
@@ -22,16 +23,11 @@ export default function Chat(){
 
         sliderEle.push(
             <BtnComp key={valKey} keyVal={valKey} isActive={isActive} onClick={() => {
+                setKey(valKey);
                 setArr(dict[valKey].theStrArr);
-                curKey = valKey;
             }} />
         );
     }
-
-    //Init the disImg
-    disImg.push(
-        <ImgComp key={curKey} caption={dict["Who am I?"].imgArr[0][1]} theSrc={dict["Who am I?"].imgArr[0][0]} />
-    )
 
 
     /*Use effect hook is used for adding dynamic feautres
@@ -50,20 +46,24 @@ export default function Chat(){
         
         const typed = new Typed(typedRef.current, options);
     
-        
         //Re-size the window based on response length
-        if(dict[strArr]){
-            resWin.current.style.minHeight = `${resWin.current.offsetHeight + dict[strArr].resHeight}px`;
+        if(dict[curKey]){
             disImg = []; //Reset the array
 
-            for(let i = 0; i < dict[strArr].imgArr.length; i++){
+            for(let i = 0; i < dict[curKey].imgArr.length; i++){
                 disImg.push(
-                    <ImgComp caption={dict[curKey].imgArr[i][1]} theSrc={dict[curKey].imgArr[i][1]} />
+                    <ImgComp key={i} caption={dict[curKey].imgArr[i][1]} theSrc={dict[curKey].imgArr[i][0]} />
                 )
             }
+            
+
+            const divElement = document.createElement("div");
+            imgRef.current.firstChild.innerHTML = '';
+            createRoot(divElement).render(disImg);
+            imgRef.current.firstChild.appendChild(divElement);
 
         }
-      
+
         return () => {
           typed.destroy();
         };
@@ -74,12 +74,13 @@ export default function Chat(){
     return (
         <>
         <div className={styles.flexDis}>
-            <div id={styles.response} ref={resWin}>
+            <div id={styles.response}>
                 <div ref={typedRef}></div>
                 
             </div>
-            <div id={styles.imgSlide}>
-                {disImg}
+            <div id={styles.imgSlide} ref={imgRef}>
+                <div>
+                </div>
             </div>
 
         </div>
@@ -122,7 +123,7 @@ function ImgComp({caption, theSrc="profile2"}){
     return(
         <>
             <Image id={styles.displayImg} 
-                    src={require(`../public/home/${theSrc}.png`)}
+                    src={require(`../public/home/${theSrc}`)}
                     alt={caption}
                     width={340}
                     height={340} />

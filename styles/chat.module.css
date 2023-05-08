@@ -7,11 +7,12 @@
     grid-template-columns: 5% 90% 5%;
 }
 
-#imgSlide p{
+#imgSlide div p{
     display: block;
-    color: #222424;
+    color: #30336b;
     text-align: center;
-    padding-top: 5px;
+    padding-top: 10px;
+    margin-bottom: 50px;
 }
 
 .hidden{
@@ -63,19 +64,15 @@
     margin-bottom: 20px;
 }
 
-#imgSlide{
+#imgSlide div{
     display: flex;
     align-items: center;
     flex-direction: column;
     transition: transform 0.2s ease;
 }
 
-#imgSlide img{
+#imgSlide div img{
     margin: 10px;
-}
-
-#imgSlide img:hover{
-    transform: scale(1.02);
 }
 
 #displayImg{
