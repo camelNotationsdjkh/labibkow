@@ -10,8 +10,7 @@ class dictComp{
 
 //Creating the dictComp
 const comp1 = new dictComp(
-    ['Hello, world!', 'Welcome to my website 🐪 !', 
-    "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam eveniet eligendi sapiente ipsa dolorum sequi, doloremque alias ipsam tempore? Consectetur aliquid, dolores eius repudiandae quasi possimus amet velit a neque!"]
+    ['Hello there! 👋', 'I am Labib Kowsar, a third year Electrical engineering⚡student at the University of British Columbia (Vancouver) and this is my personal website! Here you’ll find some of the projects, my most recent resumes, and ways to get in touch with me. ^2500', 'If you’re still on this page, you’re probably wondering what’s going on at the bottom of this page! Well, I have noticed that with most portfolio sites, it might get tiring to read blocks of text. So this is my attempt to create a more personalized experience that mimics a text message conversation you would have with me in real life. ^2500', 'While it’s still far from an actual conversation, I hope it lets you get to know me in a more interactive way. Of course, I realize this isn’t everyone’s cup of tea, so I kept the other pages (projects, resume) with a more traditional approach. As they say: don’t fix what ain’t broke! Either way, thanks for clicking on my website, and I hope you enjoy your stay!']
 );
 
 const comp2 = new dictComp(

@@ -38,7 +38,7 @@ export default function Footer(){
 
                 </div>
                 <div className={styles.flex}>
-                    <div>&copy; Labib Kowsar, camelNote Coperation &trade;</div>
+                    <div>&copy; Labib Kowsar 2023 &trade;</div>
                 </div>
             </div>
         </>
