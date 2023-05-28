@@ -93,6 +93,10 @@ nav ul li a:hover{
   background: #fefefe;
 }
 
+::selection{
+  background: rgba(31, 189, 31, 0.829);
+}
+
 .hideNav{
   opacity: 0;
   height:0;

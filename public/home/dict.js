@@ -1,4 +1,4 @@
-const text1 = "A picture of me at the Beach. The sun was in my eyes a bit in the photo, which is why I am squinting!";
+const text1 = "Me at Wreck Beach. The sun was in my eyes a bit in the photo, which is why I am squinting!";
 const defaultT = [["profile2.png", text1]];
 
 class dictComp{
@@ -14,7 +14,7 @@ const comp1 = new dictComp(
 );
 
 const comp2 = new dictComp(
-    ["My favourite color is blue", "My favourite color is red"],
+    ["Ah the age old question. If you asked me from elementary to middle school, I would have answered blue. Sky blue if I was feeling spicy that day. But nowadays I can’t really decide which is my favorite: it's a tough competition between emerald green or alizarin red."]
 )
 
 const comp3 = new dictComp(
@@ -24,7 +24,7 @@ const comp3 = new dictComp(
 
 
 const comp4 = new dictComp(
-    ["I have a weak spot for ridiculously fast animals. Which is why the <b>peregrine falcon</b> and <b>cheetah</b> are my absolute favorite animals. It baffles me how evolutionary fine-tuned these two animals are to achieve top speeds of 390 km/hr and 100 km/hr respectively. ^1000", "Octopuses are a close second — I am fascinated by how smart these nine brained (yes you read that right, nine brained!) creatures are. Not to mention how some octopuses can change the color+texture of their skin to almost perfectly mimic its environment. They are just so cool! ^1000"],
+    ["I have a weak spot for ridiculously fast animals. Which is why the <b>peregrine falcon</b> and <b>cheetah</b> are my absolute favorite animals. It baffles me how evolutionary fine-tuned these two animals are to achieve top speeds of 390 km/hr and 100 km/hr respectively. ^1000 <br><br> Octopuses are a close second — I am fascinated by how smart these nine brained (yes you read that right, nine brained!) creatures are. Not to mention how some octopuses can change the color+texture of their skin to almost perfectly mimic its environment. They are just so cool!^1000"],
     [
         ["pere.jpg", "Fastest animal in the world: the peregrine falcon"],
         ["cheetah.jpg", "Fastest land animals in the world: the cheetah"]
