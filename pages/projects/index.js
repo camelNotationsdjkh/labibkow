@@ -8,13 +8,13 @@ export default function ProjectPage() {
     const contentArr = [
       {
         tags: ["software", "game", "platformer"],
-        imgLink: "pere.jpg",
-        theme: "green",
-        text: "lorem lipsum doremom"
+        imgLink: "pentoBig.jpg",
+        theme: "red",
+        text: "lorem lipsum doremom",
       },
       {
         tags: ["software"],
-        imgLink: "pere.jpg",
+        imgLink: "pentoBig.jpg",
         theme: "green",
         text: "What is love? Baby don't hurt me no more"
       },
@@ -35,14 +35,15 @@ export default function ProjectPage() {
             <DefCard theDict={contentArr[curKey]} vis={vis} setVis={setVis} />
           </div>
         </div>
+        <ProjHead title="Software 💻" />
         <div className={styles.flexBox}>
           <Card
             key="c1"
             keyVal={0}
             setKey={setKey}
-            imgLink="pere.jpg"
-            text="Lmao"
-            themeColor="green"
+            imgLink="pentoBig.jpg"
+            text="Pento's Pledge"
+            themeColor="#16a085"
             vis={vis}
             setVis={setVis}
           />
@@ -51,14 +52,60 @@ export default function ProjectPage() {
             key="c2"
             keyVal={1}
             setKey={setKey}
-            imgLink="pere.jpg"
-            text="Lmao"
-            themeColor="green"
+            imgLink="nikaBig.jpg"
+            text="Nika: Discord Confessions Bot"
+            themeColor="#2980b9"
+            vis={vis}
+            setVis={setVis}
+          />
+
+          <Card
+            key="c2"
+            keyVal={1}
+            setKey={setKey}
+            imgLink="worldBig.jpg"
+            text="WW2 Timeline Website"
+            themeColor="#c0392b"
+            vis={vis}
+            setVis={setVis}
+          />
+        </div>
+        <ProjHead title="Hardware 🤖" />
+        <div className={styles.flexBox}>
+          <Card
+            key="c1"
+            keyVal={0}
+            setKey={setKey}
+            imgLink="reflowBig.jpg"
+            text="Reflow Oven Controller"
+            themeColor="#2d3436"
+            vis={vis}
+            setVis={setVis}
+          />
+
+          <Card
+            key="c2"
+            keyVal={1}
+            setKey={setKey}
+            imgLink="robotBack.jpg"
+            text="Magnetically controlled Robot"
+            themeColor="#8e44ad"
             vis={vis}
             setVis={setVis}
           />
         </div>
       </>
     );
+}
+
+function ProjHead({title}){
+  return (
+    <>
+        <div className={styles.headerContent}>
+          {title}
+          <div className={styles.blueLine}></div>
+        </div>
+    </>
+  )
 }
 

@@ -18,3 +18,16 @@
     display: flex;
     flex-wrap: wrap;
 }
+
+.headerContent{
+    font-weight: 600;
+    font-size: 34pt;
+    margin: 10px 20px;
+}
+
+.blueLine{
+    background: black;
+    width:50%;
+    height:3px;
+    border-radius: 5px;
+}

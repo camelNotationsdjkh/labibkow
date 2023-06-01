@@ -24,7 +24,7 @@ export default function DefCard({theDict,vis, setVis}){
             }}>
                 <div className={styles.innerGrid}>
                     <div className={styles.sideImg} style={{
-                        backgroundImage: `url("/home/${imgLink}")`,
+                        backgroundImage: `url("/project/${imgLink}")`,
                     }}/>
 
                     <div className={styles.leftBox}>

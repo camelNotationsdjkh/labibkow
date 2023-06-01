@@ -2,7 +2,14 @@ import { useState } from "react";
 import styles from "../styles/card.module.css";
 import Image from 'next/image';
 
-export default function Card({keyVal, setKey, imgLink, text, themeColor, vis, setVis}) {
+export default function Card({keyVal, ...rest}) {
+  //setKey, imgLink, text, themeColor, vis, setVis
+  const setKey = rest.setKey;
+  const imgLink = rest.imgLink;
+  const text = rest.text;
+  const themeColor = rest.themeColor;
+  const vis = rest.vis;
+  const setVis = rest.setVis;
   
   return (
     <>
@@ -11,12 +18,12 @@ export default function Card({keyVal, setKey, imgLink, text, themeColor, vis, se
         setKey(keyVal);
       }}>
         <div className={styles.top} style={{
-          backgroundImage: `url(/home/${imgLink})`
+          backgroundImage: `url(/project/${imgLink})`
         }}>
         </div>
         <div className={styles.bottom} style={{
           background: `${themeColor}`,
-        }}>This the bottom</div>
+        }}>{text}</div>
       </div>
     </>
   );
