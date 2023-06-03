@@ -27,6 +27,7 @@
 
 .blueLine{
     background: black;
+    min-width: 264px;
     width:50%;
     height:3px;
     border-radius: 5px;

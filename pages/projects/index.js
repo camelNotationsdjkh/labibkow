@@ -8,13 +8,19 @@ export default function ProjectPage() {
     const contentArr = [
       {
         tags: ["software", "game", "platformer"],
-        imgLink: "pentoBig.jpg",
+        imgLink: "pentoSmall.png",
         theme: "red",
         text: "lorem lipsum doremom",
       },
       {
         tags: ["software"],
-        imgLink: "pentoBig.jpg",
+        imgLink: "nikaSmall.jpg",
+        theme: "green",
+        text: "What is love? Baby don't hurt me no more"
+      },
+      {
+        tags: ["software"],
+        imgLink: "worldSmall.jpg",
         theme: "green",
         text: "What is love? Baby don't hurt me no more"
       },
@@ -61,7 +67,7 @@ export default function ProjectPage() {
 
           <Card
             key="c2"
-            keyVal={1}
+            keyVal={2}
             setKey={setKey}
             imgLink="worldBig.jpg"
             text="WW2 Timeline Website"
