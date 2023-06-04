@@ -3,29 +3,56 @@ import styles from "styles/project.module.css";
 import { useState } from "react";
 import DefCard from "@/components/detailCard";
 
+const contentArr = [
+  {
+    tags: ["platformer game", "python", "pygame"],
+    imgLink: "pentoSmall.png",
+    theme: "#27ae60",
+    text: "lorem lipsum doremom",
+    hover: "#2ecc71",
+    title: "Pento's Pledge",
+    btnLink: "https://github.com/camelNotationsdjkh/Pento-s-Pledge",
+  },
+  {
+    tags: ["discord Bot", "discord.js", "javascript", "google sheets"],
+    imgLink: "nikaSmall.jpg",
+    theme: "#2980b9",
+    text: "What is love? Baby don't hurt me no more",
+    hover: "#3498db",
+    title: "Nika | Confession bot",
+    btnLink: "https://github.com/camelNotationsdjkh/Nika-confessions",
+  },
+  {
+    tags: ["history", "website", "javascript"],
+    imgLink: "worldSmall.jpg",
+    theme: "#c0392b",
+    text: "What is love? Baby don't hurt me no more",
+    hover: "#e74c3c",
+    title: "WW2 - The War to end all Wars - Timeline",
+    btnLink: "https://github.com/camelNotationsdjkh/WW2-timeline",
+  },
+  {
+    tags: ["assembly"],
+    imgLink: "reflowSmall.jpg",
+    theme: "#2c3e50",
+    text: "What is love? Baby don't hurt me no more",
+    hover: "#34495e",
+    title: "Pento's Pledge",
+    btnLink: "https://github.com/camelNotationsdjkh/Pento-s-Pledge",
+  },
+  {
+    tags: ["C", "EFM8 & STM32 microcontrollers"],
+    imgLink: "magSmall.jpg",
+    theme: "#8e44ad",
+    text: "What is love? Baby don't hurt me no more",
+    hover: "#9b59b6",
+    title: "Pento's Pledge",
+    btnLink: "https://github.com/camelNotationsdjkh/Pento-s-Pledge",
+  },
+];
+
 
 export default function ProjectPage() {
-    const contentArr = [
-      {
-        tags: ["software", "game", "platformer"],
-        imgLink: "pentoSmall.png",
-        theme: "red",
-        text: "lorem lipsum doremom",
-      },
-      {
-        tags: ["software"],
-        imgLink: "nikaSmall.jpg",
-        theme: "green",
-        text: "What is love? Baby don't hurt me no more"
-      },
-      {
-        tags: ["software"],
-        imgLink: "worldSmall.jpg",
-        theme: "green",
-        text: "What is love? Baby don't hurt me no more"
-      },
-    ];
-  
     const [curKey, setKey] = useState(0);
     const [vis, setVis] = useState(false);
   
@@ -66,7 +93,7 @@ export default function ProjectPage() {
           />
 
           <Card
-            key="c2"
+            key="c3"
             keyVal={2}
             setKey={setKey}
             imgLink="worldBig.jpg"
@@ -79,8 +106,8 @@ export default function ProjectPage() {
         <ProjHead title="Hardware 🤖" />
         <div className={styles.flexBox}>
           <Card
-            key="c1"
-            keyVal={0}
+            key="d1"
+            keyVal={3}
             setKey={setKey}
             imgLink="reflowBig.jpg"
             text="Reflow Oven Controller"
@@ -90,8 +117,8 @@ export default function ProjectPage() {
           />
 
           <Card
-            key="c2"
-            keyVal={1}
+            key="d2"
+            keyVal={4}
             setKey={setKey}
             imgLink="robotBack.jpg"
             text="Magnetically controlled Robot"

@@ -1,8 +1,23 @@
 .card{
     background: white;
-    width:900px;
-    height:675px;
     position: relative;
+    width: 900px;
+    height: 675px;
+    animation-name: grow-in;
+    animation-duration: 0.25s;
+}
+
+@keyframes grow-in {
+    0% {
+        width:765px;
+        height: 573.75px;
+        opacity: 0.6;
+    }
+    100%{
+        width: 900px;
+        height: 675px;
+        opacity: 1;
+    }
 }
 
 .innerGrid{
@@ -24,7 +39,7 @@
 .topCard{
     display: flex;
     justify-content: space-between;
-    background-color: #222f3e;
+    background-color: black;
 
 }
 
@@ -41,7 +56,25 @@
     margin: 10px 5px;
 }
 
-.topCard img{
+.imgCon{
     cursor: pointer;
-    margin:10px 5px;
+    padding: 10px 5px;
+    transition: background ease 0.2s;
+}
+
+.imgCon:hover{
+    background-color: red;
+}
+
+.content{
+    padding: 30px 10px;
+}
+
+.content > *{
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+.content h2{
+    font-size: 30pt;
+    margin-bottom: 15px;
 }

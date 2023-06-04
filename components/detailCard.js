@@ -1,3 +1,4 @@
+import ArrBtn from "./arrBtn";
 import styles from "/styles/defCard.module.css"
 import Image from 'next/image';
 
@@ -7,6 +8,9 @@ export default function DefCard({theDict,vis, setVis}){
     const imgLink = theDict.imgLink;
     const theme = theDict.theme;
     const text = theDict.text;
+    const hover = theDict.hover;
+    const title = theDict.title;
+    const btnLink = theDict.btnLink;
 
     const handleClick = () => {
         setVis(false);
@@ -30,14 +34,23 @@ export default function DefCard({theDict,vis, setVis}){
                     <div className={styles.leftBox}>
                         <div className={styles.topCard}>
                             <div>{tagArr}</div>
+                            <span className={styles.imgCon} onClick={handleClick}>
                             <Image src="/project/cancel.svg"
                                 alt="Left arrow"
                                 width={30}
-                                height={30} onClick={handleClick} />
+                                height={30} />
+                            </span>
                         </div>
-                        <div className={styles.content}>{text}</div>
+                        <div className={styles.content}>
+                            <h2>{title}</h2>
+                            <p>{text}</p>
+                        </div>
+                        <div className="btnCont">
+                            <ArrBtn content="More details" color={theme} hoverColor={hover} btnLink={btnLink}/>
+                        </div>
                     </div>
                 </div>
             </div>
     )
 }
+
