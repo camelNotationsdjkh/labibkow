@@ -43,9 +43,9 @@ export default function DefCard({theDict,vis, setVis}){
                         </div>
                         <div className={styles.content}>
                             <h2>{title}</h2>
-                            <p>{text}</p>
+                            <p dangerouslySetInnerHTML={{ __html: text }} />
                         </div>
-                        <div className="btnCont">
+                        <div className={styles.btnCont}>
                             <ArrBtn content="More details" color={theme} hoverColor={hover} btnLink={btnLink}/>
                         </div>
                     </div>
