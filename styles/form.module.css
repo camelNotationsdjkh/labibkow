@@ -1,0 +1,71 @@
+.flexCon{
+    background:#11101b;
+    width: max(500px, 40%);
+    height: 500px;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+.flexCon form > *{
+    display: block;
+    border: none;
+}
+
+.flexCon form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.flexCon form input{
+    background: #ecf0f1;
+    margin-bottom: 10px;
+    text-align: center;
+    font-family: 'Lexend Deca', sans-serif;
+    padding: 5px 10px;
+}
+
+.flexCon form textarea{
+    background: #ecf0f1;
+}
+
+.flexCon form input:focus{
+    background: white;
+}
+
+.flexCon form textarea:focus{
+    background: white;
+}
+
+.flexCon form textarea{
+    width: min(700px, 70%);
+    height: 200px;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+.flexCon label{
+    color: white;
+    font-size: 18pt;
+    padding: 10px;
+}
+
+.flexCon form input[type="submit"]{
+    background: #27ae60;
+    width:300px;
+    height:30px;
+    margin:10px 0;
+    cursor: pointer;
+    transition: ease 0.1s;
+}
+
+.flexCon form input[type="submit"]:hover{
+    background: #2ecc71;
+    width:250px;
+    height:30px;
+    margin:10px 0;
+}
+
+.note{
+    padding:20px min(70px, 10%);
+    text-align: center;
+}
