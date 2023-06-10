@@ -1,8 +1,9 @@
 .flexCon{
     background:#11101b;
-    width: max(500px, 40%);
+    width: max(900px, 40%);
     height: 500px;
     font-family: 'Lexend Deca', sans-serif;
+    padding-top: 10px;
 }
 
 .flexCon form > *{
@@ -22,7 +23,7 @@
     margin-bottom: 10px;
     text-align: center;
     font-family: 'Lexend Deca', sans-serif;
-    padding: 5px 10px;
+    padding: 5px 30px;
 }
 
 .flexCon form textarea{
@@ -41,6 +42,7 @@
     width: min(700px, 70%);
     height: 200px;
     font-family: 'Lexend Deca', sans-serif;
+    padding: 10px;
 }
 
 .flexCon label{
@@ -69,3 +71,70 @@
     padding:20px min(70px, 10%);
     text-align: center;
 }
+
+.mainCon{
+    text-align: center;
+    padding:20px min(70px, 10%);
+}
+
+.mainCon h1{
+    margin: 20px 0;
+    font-size: 54pt;
+}
+
+.mainCon p{
+    font-size: 16pt;
+    margin-bottom: min(30px, 30%);
+}
+
+.msgScreen{
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    color: white;
+    animation: popIn 0.5s;
+
+}
+
+@keyframes popIn{
+    0%{
+        bottom: -200px;
+    }
+    100%{
+        bottom:0px;
+    }
+    
+}
+
+.msgScreen div{
+    background: black;
+    width: min(750px, 100%);
+    height: 150px;
+    text-align: center;
+}
+
+.msgScreen div span{
+    float: right;
+    padding: 5px 10px;
+    font-size: 21pt;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.msgScreen div h1{
+    font-size: min(32pt, 8vw);
+    padding:10px;
+}
+
+.msgScreen div p{
+    font-size: min(16pt, 4vw);
+}
+
+.msgScreen div span:hover{
+    background: red;
+}
+

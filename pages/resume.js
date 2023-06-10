@@ -1,7 +1,11 @@
+import StnBtn from "@/components/stnBtn";
+
 export default function ResumePage(){
     return (
         <>
-            <h1>Resume Page</h1>
+            <div>
+                <StnBtn text="resume1" link="/" />
+            </div>
         </>
     )
 }

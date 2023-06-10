@@ -1,0 +1,16 @@
+.button{
+    background: #7f8c8d;
+    color: black;
+    text-align: center;
+    padding: 15px 30px;
+    transition: ease 0.2s;
+    border: none;
+    font-family: 'Lexend Deca', sans-serif;
+    cursor: pointer;
+    font-size: 14pt;
+}
+
+.button:hover{
+    background: black;
+    color: white;
+}
