@@ -1,5 +1,5 @@
 .button{
-    background: #7f8c8d;
+    background: #bdc3c7;
     color: black;
     text-align: center;
     padding: 15px 30px;
@@ -8,6 +8,8 @@
     font-family: 'Lexend Deca', sans-serif;
     cursor: pointer;
     font-size: 14pt;
+    border-radius: 2px;
+    margin: 0 5px;
 }
 
 .button:hover{

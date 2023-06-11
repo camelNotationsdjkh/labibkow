@@ -1,0 +1,39 @@
+.flexCon{
+    display: flex;
+    justify-content: center;
+    padding: 20px 30px;
+}
+
+.bar{
+    display: block;
+    width: max(90%, 700px);
+    height:2px;
+    background: black;
+    border-radius: 3px;
+}
+
+.headerCon{
+    text-align: center;
+    padding: 20px 0 0 0;
+}
+
+.headerCon h1{
+    font-size: 48pt;
+}
+
+.headerCon h3{
+    color:rgb(37, 36, 36);
+    font-size: 16pt;
+    margin:10px 10px
+}
+
+.iframeCon{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.iframeCon iframe{
+    width:max(1000px, 30%);
+    height: 550px;
+}
