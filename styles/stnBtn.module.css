@@ -16,3 +16,9 @@
     background: black;
     color: white;
 }
+
+@media only screen and (max-width: 900px){
+    .button{
+        margin: 3px 5px;
+    }
+}

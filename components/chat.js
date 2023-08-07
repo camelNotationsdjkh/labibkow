@@ -45,6 +45,7 @@ export default function Chat(){
         };
         
         const typed = new Typed(typedRef.current, options);
+        
     
         //Re-size the window based on response length
         if(dict[curKey]){
@@ -64,6 +65,8 @@ export default function Chat(){
 
         }
 
+        window.scrollTo({ top: 0, behavior: 'smooth' }); //Scrolls to top
+        
         return () => {
           typed.destroy();
         };
@@ -126,7 +129,8 @@ function ImgComp({caption, theSrc="profile2"}){
                     src={require(`../public/home/${theSrc}`)}
                     alt={caption}
                     width={340}
-                    height={340} />
+                    height={340} 
+                    placeholder="blur"/>
             <p>{caption}</p>
         </>
     )

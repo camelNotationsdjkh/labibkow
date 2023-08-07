@@ -12,6 +12,7 @@ const contentArr = [
     hover: "#2ecc71",
     title: "Pento's Pledge",
     btnLink: "https://github.com/camelNotationsdjkh/Pento-s-Pledge",
+    theWin: true,
   },
   {
     tags: ["discord Bot", "discord.js", "javascript", "google sheets"],
@@ -21,6 +22,7 @@ const contentArr = [
     hover: "#3498db",
     title: "Nika | Confession bot",
     btnLink: "https://github.com/camelNotationsdjkh/Nika-confessions",
+    theWin: true,
   },
   {
     tags: ["history", "website", "javascript"],
@@ -30,6 +32,7 @@ const contentArr = [
     hover: "#e74c3c",
     title: "WW2 - The War to end all Wars - Timeline",
     btnLink: "https://github.com/camelNotationsdjkh/WW2-timeline",
+    theWin: true,
   },
   {
     tags: ["assembly", "AT89LP51RC2 microcontroller", "group work"],
@@ -38,16 +41,18 @@ const contentArr = [
     text: "<b>Group members:</b> Charles Surianto (Head chef), Musa Charara, Peter Woolsey, Nathan Roorda, Lingxiao Tian<br /><br />In this group project, we designed a reflow oven controller. Reflow soldering is a technique to precisely solder surface mount components to a PCB and is often used in industry. The goal of this project was to create a control system that would control the temperature inside the oven with the PCB inside and achieve a user-set temperature profile. For this purpose, we used the AT89LP51RC2 microcontroller and in the controller we implemented  a user interface for setting the temperature profile, as well as temperature sensors for monitoring the temperature of the oven and the PCB. The project involves designing the hardware and software for the reflow oven controller, as well as testing and validating the controller to ensure that it meets the required specifications. <br /> <br />Additionally, we had a PID feedback loop for the temperature inside to minimize error and a graphical Python interface that would chart the real-time temperature inside the oven to the ideal reflow profile. We also had a sound system and LEDs for alerting the user when it was safe to remove the PCB.",
     hover: "#34495e",
     title: "Reflow oven controller",
-    btnLink: "https://github.com/camelNotationsdjkh/Pento-s-Pledge",
+    btnLink: "/projects/reflow",
+    theWin: false,
   },
   {
     tags: ["C", "EFM8 & STM32 microcontrollers", "group work"],
     imgLink: "magSmall.jpg",
     theme: "#8e44ad",
-    text: "What is love? Baby don't hurt me no more",
+    text: "<b>Group members:</b> Charles Surianto (Head chef), Musa Charara, Peter Woolsey, Nathan Roorda, Lingxiao Tian <br /><br />For our last project in our design class, me and my team built a wirelessly controlled robot car using low-frequency magnetic waves. The project consists of two parts: a robot and a remote controller. The robot is based on the STM32L051 microcontroller and has two modes of operation: beacon/tracking mode and controller mode. In the tracking mode, the robot would maintain its angle and distance away from the remote. When toggled into the controller mode, the robot follows the directional commands sent by the joystick in the remote; directions such as North (relative to the robot), East, Southwest, etc.<br /> <br />Our final product is a multi-directional, fine motor controllable robot outfitted with multi-colored RGB headlights, and a sonar powered obstacle detection and alarm system.",
     hover: "#9b59b6",
     title: "Magnetically controlled robot car",
-    btnLink: "https://github.com/camelNotationsdjkh/Pento-s-Pledge",
+    btnLink: "/projects/robot",
+    theWin: false,
   },
 ];
 

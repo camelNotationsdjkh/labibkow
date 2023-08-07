@@ -10,15 +10,15 @@ class dictComp{
 
 //Creating the dictComp
 const comp1 = new dictComp(
-    ['Hello there! 👋', 'I am Labib Kowsar, a third year Electrical engineering⚡student at the University of British Columbia (Vancouver) and this is my personal website! Here you’ll find some of the projects, my most recent resumes, and ways to get in touch with me. ^2500', 'If you’re still on this page, you’re probably wondering what’s going on at the bottom of this page! Well, I have noticed that with most portfolio sites, it might get tiring to read blocks of text. So this is my attempt to create a more personalized experience that mimics a text message conversation you would have with me in real life. ^2500', 'While it’s still far from an actual conversation, I hope it lets you get to know me in a more interactive way. Of course, I realize this isn’t everyone’s cup of tea, so I kept the other pages (projects, resume) with a more traditional approach. As they say: don’t fix what ain’t broke! Either way, thanks for clicking on my website, and I hope you enjoy your stay!']
+    ['Hello there! 👋^2000', 'I am Labib Kowsar, a third year Electrical engineering⚡student at the University of British Columbia (Vancouver) and this is my personal website! Here you’ll find some of my notable projects, most recent resumes, and ways to get in touch with me. ^2500', 'If you’re still on this page, you’re probably wondering what’s going on at the bottom of this page! Well, I have noticed that with most portfolio sites, it gets tiring to just read blocks of text. So this is my attempt to create a more personalized experience that mimics a text message conversation you would have with me in real life. ^2500', 'While it’s still far from an actual conversation, which I hope lets you get to know me in a more interactive way. Of course, I realize this isn’t everyone’s cup of tea, so I kept the other pages (projects, resume) with a more traditional approach. As they say: don’t fix what ain’t broke! Either way, thanks for clicking on my website, and I hope you enjoy your stay!']
 );
 
 const comp2 = new dictComp(
-    ["Ah the age old question. If you asked me from elementary to middle school, I would have answered blue. Sky blue if I was feeling spicy that day. But nowadays I can’t really decide which is my favorite: it's a tough competition between emerald green or alizarin red."]
+    ["Ah, the age old question. If you asked me from elementary to middle school, I would have answered blue. Sky blue if I was feeling extra spicy that day. But nowadays I can’t really decide which is my favorite: it's a tough competition between emerald green or alizarin red."]
 )
 
 const comp3 = new dictComp(
-    ["I want to make a massive garden"],
+    ["Have you ever heard of the 5-year plans used by the Soviet Union starting in the 1920s? Well in essence, it's a set of economic strategies to propell the national economy of the Soviet Union within 5 years. I personally like to design my future goals in similar, 5 year blocks.", "Now before you give me the side eye for modeling my life to the authoritarian docturine of Stalin that caused a famine that killed 6-7 million people — the comparison is (mostly) superficial. I am not really sure where I am going with this, but basically I realized that it's really hard for me to envision myself far into the future. So much changes in just a few years, so I never found it to be a productive use of time to make goals that ultimately wouldn't be relevant to my life at that point.^1000", "5 years I think is a good timeframe for creating long-term goals that are actually concrete and actionable. Here's my 5 year plan: <br /><br /><ul><li>Finish my degree and pursue my engineering interests through CO-OP positions, personal projects, and student design teams.</li><li>Improve my soft skills by being involved in my design team, EUS student government, and interships that allow me to collaborate with others</li></ul>"],
     
 )
 
@@ -60,9 +60,6 @@ const comp10 = new dictComp(
     ["My software skills include. Lmao none, I just use chatGPT. Check out <a href='/projects'>Projects for more details</a>"],
     defaultT
 )
-
-
-
 
 // Exporting the actual dict
 export const dict = {

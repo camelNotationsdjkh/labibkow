@@ -1,0 +1,132 @@
+.flexTable{
+    margin-bottom: 15px;
+    text-indent: 5px;
+}
+
+.flexTable a{
+    display: block;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 14pt;
+    margin: 5px 0;
+    color: black;
+}
+.flexBox a:focus{
+    outline: none;
+}
+
+.flexBox{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.flexTable a:hover{
+    background: black;
+    color: white;
+    transition: ease 0.25s;
+}
+
+.flexTable ul{
+    font-weight: 100;
+    text-indent: 20px;
+    list-style: none;
+}
+
+.flexTable ul li a{
+    font-weight: 100;
+    text-indent: 20px;
+    list-style: none;
+}
+
+.content{
+    padding: 20px 40px 40px 20px;
+    width: 100%;
+    position: relative;
+    overflow: auto;
+    z-index: 0;
+}
+
+.content h1{
+    font-size:60pt;
+    padding:0;
+    margin-bottom: 10px;
+}
+
+.content h2{
+    font-size: 45pt;
+    margin-bottom: 5px;
+}
+
+.content h3{
+    font-size: 31pt;
+    margin: 20px 0;
+}
+
+.content p{
+    display: block;
+    font-size: 16pt;
+    margin-bottom: 20px;
+    font-family: 'Lato', sans-serif;
+}
+
+.content h4{
+    font-size: 16pt;
+    margin-bottom: 10px;
+}
+
+.content span{
+    font-size: 18pt;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.content h5{
+    font-size: 14pt;
+    color:#34495e;
+    font-weight: bold;
+}
+
+.flexBox{
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.imgCon{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    overflow: hidden;
+}
+
+.imgCon img{
+    max-width: 100%;
+    height: auto;
+}
+
+.content img{
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+@media only screen and (max-width: 1100px){
+    .imgCon{
+      flex-wrap: wrap;
+    }
+
+    .content h1{
+        font-size:46pt;
+        padding:0;
+        margin-bottom: 10px;
+    }
+
+    .content h2{
+        font-size: 38pt;
+        margin-bottom: 5px;
+    }
+
+    .content h3{
+        font-size: 27pt;
+        margin: 20px 0;
+    }
+}

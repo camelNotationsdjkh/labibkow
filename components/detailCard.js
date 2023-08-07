@@ -11,6 +11,7 @@ export default function DefCard({theDict,vis, setVis}){
     const hover = theDict.hover;
     const title = theDict.title;
     const btnLink = theDict.btnLink;
+    const theWin = theDict.theWin || false;
 
     const handleClick = () => {
         setVis(false);
@@ -46,7 +47,7 @@ export default function DefCard({theDict,vis, setVis}){
                             <p dangerouslySetInnerHTML={{ __html: text }} />
                         </div>
                         <div className={styles.btnCont}>
-                            <ArrBtn content="More details" color={theme} hoverColor={hover} btnLink={btnLink}/>
+                            <ArrBtn content="More details" color={theme} hoverColor={hover} btnLink={btnLink} newWin={theWin}/>
                         </div>
                     </div>
                 </div>

@@ -12,6 +12,7 @@ export default function ResumePage(){
             </div>
             
             <div className={styles.flexCon}>
+                <StnBtn text="General Engineering" link="/" />
                 <StnBtn text="Hardware Focus" link="/" />
                 <StnBtn text="Software Focus" link="/" />
                 <StnBtn text="Non-technical" link="/" />

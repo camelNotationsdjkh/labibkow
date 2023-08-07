@@ -34,7 +34,7 @@ export default function Navbar(){
     
     //Code to execute on window change
     useEffect(() => {
-        if(windowSize.width > 900) setActive(false);
+        if(windowSize.width >= 900) setActive(false);
         else setActive(true);
       }, [windowSize]);
 
@@ -54,10 +54,10 @@ export default function Navbar(){
         
             <nav className={isActive?"hideNav":""}>
                 <ul>
-                    <li><Link href="/" className={(router.pathname == '/')? "active": ""}>Home</Link></li>
-                    <li><Link href="/projects" className={(router.pathname == '/projects')? "active": ""}>Projects</Link></li>
-                    <li><Link href="/resume" className={(router.pathname == '/resume')? "active": ""}>Resume</Link></li>
-                    <li><Link href="/contact" className={(router.pathname == '/contact')? "active": ""}>Contact</Link></li>
+                    <li><Link href="/" className={(router.pathname == '/')? "active": ""} >Home</Link></li>
+                    <li><Link href="/projects" className={(router.pathname.includes('/projects'))? "active": ""}>Projects</Link></li>
+                    <li><Link href="/resume" className={(router.pathname.includes('/resume'))? "active": ""}>Resume</Link></li>
+                    <li><Link href="/contact" className={(router.pathname.includes('/contact'))? "active": ""}>Contact</Link></li>
                 </ul>
             </nav>
         </div>
