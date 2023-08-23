@@ -18,7 +18,7 @@ const comp2 = new dictComp(
 )
 
 const comp3 = new dictComp(
-    ["Have you ever heard of the 5-year plans used by the Soviet Union starting in the 1920s? Well in essence, it's a set of economic strategies to propell the national economy of the Soviet Union within 5 years. I personally like to design my future goals in similar, 5 year blocks.", "Now before you give me the side eye for modeling my life to the authoritarian docturine of Stalin that caused a famine that killed 6-7 million people — the comparison is (mostly) superficial. I am not really sure where I am going with this, but basically I realized that it's really hard for me to envision myself far into the future. So much changes in just a few years, so I never found it to be a productive use of time to make goals that ultimately wouldn't be relevant to my life at that point.^1000", "5 years I think is a good timeframe for creating long-term goals that are actually concrete and actionable. Here's my 5 year plan: <br /><br /><ul><li>Finish my degree and pursue my engineering interests through CO-OP positions, personal projects, and student design teams.</li><li>Improve my soft skills by being involved in my design team, EUS student government, and interships that allow me to collaborate with others</li></ul>"],
+    ["Have you ever heard of the 5-year plans used by the Soviet Union starting in the 1920s? Well in essence, it's a set of economic strategies to propell the national economy of the Soviet Union within 5 years. I personally like to design my future goals in similar, 5 year blocks.", "Now before you give me the side eye for modeling my life to the authoritarian docturine of Stalin that caused a famine that killed 6-7 million people — the comparison is (mostly) superficial. I am not really sure where I am going with this, but basically I realized that it's really hard for me to envision myself far into the future. So much changes in just a few years, so I never found it to be a productive use of time to make goals that ultimately wouldn't be relevant to my life at that point.^1000", "5 years I think is a good timeframe for creating long-term goals that are actually concrete and actionable. Here's my 5 year plan: <br /><br /><ul><li>Finish my degree and pursue my engineering interests through CO-OP positions, personal projects, and student design teams.</li><li>Improve my soft skills by being involved in my design team, EUS student government, and interships that give me more opportunities to collaborate with others</li><li>Use my skills and knowledge to create solutions that has a net positive impact on soceity</li></ul>"]
     
 )
 
@@ -33,7 +33,7 @@ const comp4 = new dictComp(
 
 
 const comp5 = new dictComp(
-    ["None lmao"],
+    ["I am currently working a summer job in warehousing for Finning, a provider and servicer of (prodominantly) CAT products. While it's not a job related to engineering, I am really loving the experience - especially the vibrant company culture and interacting with my co-workers. Seriously, you'll meet some of the most charismatic, nicest, and funniest people at my branch (some of them could go "],
 )
 
 const comp6 = new dictComp(
@@ -42,7 +42,7 @@ const comp6 = new dictComp(
 )
 
 const comp7 = new dictComp(
-    ["No I don't have any pets rn but I did at a time have pet fish. A whole miniature ecosystem in my living when I was 7 years old. But no one gave me the memo that it's possible to over feed them.", "So one fateful morning, I woke to discover that all 12 or so fish in the tank had died. They all recieved proper burials in my backyard."],
+    ["No I don't have any pets at the moment but I did at a time have pet fish. A whole miniature ecosystem in my living when I was 7 years old. But no one gave me the memo that it's possible to over feed them.", "So one fateful morning, I woke to discover that all 12 or so fish in the tank had died. They all recieved proper burials in my backyard."],
     
 )
 
