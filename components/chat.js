@@ -90,7 +90,7 @@ export default function Chat(){
 
         <div className={styles.flexCon}>
             <div className={`${styles.btnLeft} ${styles.btnArrow} ${(isBtnAct <= 0)? styles.hidden: ''}`} >
-            <Image id={styles.displayImg} 
+            <Image id={styles.displayImg}
                 src={require("../public/home/arrowLeft.svg")}
                 alt="Left arrow"
                 width={30}
@@ -98,13 +98,12 @@ export default function Chat(){
                     setBtnAct(prev => {
                         return prev - 1;
                     });
-                    console.log(isBtnAct);
                 }}/>
             </div>
             <div className={styles.slider}>
                 {sliderEle}
             </div>
-            <div className={`${styles.btnRight} ${styles.btnArrow} ${(isBtnAct >= 3)? styles.hidden: ''}`}>
+            <div style={{display: 'none'}} className={`${styles.btnRight} ${styles.btnArrow} ${(isBtnAct >= 3)? styles.hidden: ''}`}>
             <Image id={styles.displayImg} 
                 src={require("../public/home/arrowRight.svg")}
                 alt="Right arrow"
@@ -113,7 +112,6 @@ export default function Chat(){
                     setBtnAct(prev => {
                         return prev + 1;
                     });
-                    console.log(isBtnAct);
                 }}/>
             </div>
         </div>
@@ -130,7 +128,8 @@ function ImgComp({caption, theSrc="profile2"}){
                     alt={caption}
                     width={340}
                     height={340} 
-                    placeholder="blur"/>
+                    placeholder="blur"
+                    />
             <p>{caption}</p>
         </>
     )

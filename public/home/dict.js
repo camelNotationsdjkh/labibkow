@@ -1,6 +1,8 @@
+//Default img subtitle and images
 const text1 = "Me at Wreck Beach. The sun was in my eyes a bit in the photo, which is why I am squinting!";
 const defaultT = [["profile2.png", text1]];
 
+//A response template for the text to be sent and images
 class dictComp{
     constructor(theStrArr, imgArr = defaultT){
         this.theStrArr = theStrArr;
@@ -10,56 +12,115 @@ class dictComp{
 
 //Creating the dictComp
 const comp1 = new dictComp(
-    ['Hello there! 👋^2000', 'I am Labib Kowsar, a third year Electrical engineering⚡student at the University of British Columbia (Vancouver) and this is my personal website! Here you’ll find some of my notable projects, most recent resumes, and ways to get in touch with me. ^2500', 'If you’re still on this page, you’re probably wondering what’s going on at the bottom of this page! Well, I have noticed that with most portfolio sites, it gets tiring to just read blocks of text. So this is my attempt to create a more personalized experience that mimics a text message conversation you would have with me in real life. ^2500', 'While it’s still far from an actual conversation, which I hope lets you get to know me in a more interactive way. Of course, I realize this isn’t everyone’s cup of tea, so I kept the other pages (projects, resume) with a more traditional approach. As they say: don’t fix what ain’t broke! Either way, thanks for clicking on my website, and I hope you enjoy your stay!']
+    ['Hello there! 👋^1500', 'I am Labib Kowsar, a third year Electrical engineering⚡student at the University of British Columbia (Vancouver) and this is my personal website! Here you’ll find some of my notable projects, most recent resumes, and ways to get in touch with me. ^2500', 'If you’re still on this page, you’re probably wondering what’s going on at the bottom of this page! Well, I have noticed that with most portfolio sites, it gets tiring to just read blocks of text. So this is my attempt to create a more personalized experience that mimics a text message conversation you would have with me in real life. ^2500', 'While it’s still far from an actual conversation, which I hope lets you get to know me in a more interactive way. Of course, I realize this isn’t everyone’s cup of tea, so I kept the other pages (projects, resume) with a more traditional approach. As they say: don’t fix what ain’t broke! Either way, thanks for clicking on my website, and I hope you enjoy your stay!']
 );
 
 const comp2 = new dictComp(
-    ["Ah, the age old question. If you asked me from elementary to middle school, I would have answered blue. Sky blue if I was feeling extra spicy that day. But nowadays I can’t really decide which is my favorite: it's a tough competition between emerald green or alizarin red."]
+    ["Ah, the age old question. For the longest time I would have answered light blue, but now that I have dabbled in color theory and tried out different color palletes, my favourite color is emerald green coupled with black. Which you might of noticed is the color pallette for this site!"],
+    [["p2.png", "The HEX values for emerald green is #2ecc71!"]]
 )
 
 const comp3 = new dictComp(
-    ["Have you ever heard of the 5-year plans used by the Soviet Union starting in the 1920s? Well in essence, it's a set of economic strategies to propell the national economy of the Soviet Union within 5 years. I personally like to design my future goals in similar, 5 year blocks.", "Now before you give me the side eye for modeling my life to the authoritarian docturine of Stalin that caused a famine that killed 6-7 million people — the comparison is (mostly) superficial. I am not really sure where I am going with this, but basically I realized that it's really hard for me to envision myself far into the future. So much changes in just a few years, so I never found it to be a productive use of time to make goals that ultimately wouldn't be relevant to my life at that point.^1000", "5 years I think is a good timeframe for creating long-term goals that are actually concrete and actionable. Here's my 5 year plan: <br /><br /><ul><li>Finish my degree and pursue my engineering interests through CO-OP positions, personal projects, and student design teams.</li><li>Improve my soft skills by being involved in my design team, EUS student government, and interships that give me more opportunities to collaborate with others</li><li>Use my skills and knowledge to create solutions that has a net positive impact on soceity</li></ul>"]
-    
+    ["Hmmm, my future goals? Truth be told, I am always a little anxious answering this question because in all honesty I don't really know. There's so much that can change in the future that I don't find it particularly useful to trying to define how my future <b><i>should be</i></b> 5 or 10 years from now.",
+    "I like to focus more on the more concrete, medium term future — it's a more sensible timeline and puts me in the mindset of creating goals that more actionable compared to a vague collection of idealistic aspirations.",
+    "For now, most of my goals in the next 1-1.5 years would be to explore my career related interests through personal projects. Nothing teaches like a project, and I would love to explore more into hardware used in digital electronics and software construction. Of course, I will do a ton of coursework directly related to those topics — but it can never replace the frustration, sweat, tears and fun of grinding out to fruition an idea by yourself.^1000",
+    "At the moment, I am planning to create a Somatropin injection logger for my little sister that would record the location of the injection site and recommend the next location for the user to inject (click the ‘Somatropin logger’ prompt for more details!).",
+    "For short term goals, I am hyper focused these on three goals: <br /><br /><b>(1)</b> Get a CO-OP internship to get hands-on experience in the field and solidify my current engineering skillset. </br /><b>(2)</b>Develop new technical and soft skills while working on improving the electrical design and documentation of the Agrobot (ubc design team project)<br /><b>(1)</b> Transform the engineering student center’s garden unkept and weed filled beds into a botanical paradise before I graduate!"],
+    [["p14.jpg", ""]]
 )
 
 
 const comp4 = new dictComp(
     ["I have a weak spot for ridiculously fast animals. Which is why the <b>peregrine falcon</b> and <b>cheetah</b> are my absolute favorite animals. It baffles me how evolutionary fine-tuned these two animals are to achieve top speeds of 390 km/hr and 100 km/hr respectively. ^1000 <br><br> Octopuses are a close second — I am fascinated by how smart these nine brained (yes you read that right, nine brained!) creatures are. Not to mention how some octopuses can change the color+texture of their skin to almost perfectly mimic its environment. They are just so cool!^1000"],
     [
-        ["pere.jpg", "Fastest animal in the world: the peregrine falcon"],
-        ["cheetah.jpg", "Fastest land animals in the world: the cheetah"]
+        ["pere.jpg", "Fastest animal in the world: the peregrine falcon. Photo by Frank Cone"],
+        ["octo.jpeg", "Octopuses are just so cool! Photo by Pia B"]
     ]
 )
 
 
 const comp5 = new dictComp(
-    ["I am currently working a summer job in warehousing for Finning, a provider and servicer of (prodominantly) CAT products. While it's not a job related to engineering, I am really loving the experience - especially the vibrant company culture and interacting with my co-workers. Seriously, you'll meet some of the most charismatic, nicest, and funniest people at my branch (some of them could go "],
+    ["Last summer I worked as a student intern in warehousing for Finning, a provider and servicer of (prodominantly) CAT products. While it's not a job related to engineering, I really loved the experience - especially the vibrant company culture and interacting with my co-workers. Seriously, you'll meet some of the most charismatic, nicest, and funniest people at my branch (some of them could go on to host their own comedy show!).",
+     "I can't overstate how fun, yet productive, our workplace dynamic was. I had tons of fun, and was comfortable enough to make these two documents: <br /><br />(1) <a href='/resume/finn01.pdf'> A satirical proposal</a> asking my boss for a new vacuum cleaner (under an anonymous pen name of course - though my cover was eventually blown!)<br />(2)<a href='www.google.ca'> A set of formulas</a> and instructions for measuring longed coiled items ^1500",
+     "The backstory behind these documents is something I will leave for another day, or as a topic for an in-person discussion!"],
+     [["finnImg.jpg", "Finning, celebrating 90 years of being in business. Proud to be apart of it!"]]
+
 )
 
 const comp6 = new dictComp(
-    ["Wonder"],
+    ["I am not much of a book fan, as most of the novels I read were in highschool. The best I remember is `1984` by George Orwell - it's plot warning us about how systematic political and social conditioning can strip us of our basic freedoms as humans and effectively remove any dissent from possibly forming. The story, and it's warning against totalitarianism, resonates with me — especially in today's climate where advanced technologies can actually enable governments and companies alike to implement Orwell's description of thought control."],
+    [["p4.webp", "Book covers of 1984 around the world"]]
     
 )
 
 const comp7 = new dictComp(
-    ["No I don't have any pets at the moment but I did at a time have pet fish. A whole miniature ecosystem in my living when I was 7 years old. But no one gave me the memo that it's possible to over feed them.", "So one fateful morning, I woke to discover that all 12 or so fish in the tank had died. They all recieved proper burials in my backyard."],
+    ["No I don't have any pets at the moment but I did at one time have pet fish. A whole miniature ecosystem in my living when I was 7 years old. But no one gave me the memo that it's possible to over feed them.", "So one fateful morning, I woke to discover that all 12 or so fish in the tank had died. They all recieved proper burials in my backyard.",
+     "My family also kept a pet bird, however due to the threat of a certain strain of Avian Influenza sweeping across Asia at the time, we were forced to free the bird into the wild."],
+    [["p5.jpg", "Not an actual photo of the fish we used to have, but the ones we had are pretty similar to the photo"]]
     
 )
 
 const comp8 = new dictComp(
     ["I study at the University of British Columbia, Vancouver Campus. I am currenty enrolled in my third year as in the Electrical Engineering program as a co-op student.<br><br> I expect my degree to take 5 years to finish with co-op, so I am set to graduate in 2025-26! "],
+    [["p6.jpg", "A view showcasing IKB library, one of the most renowed buildings at UBC"]]
     
 )
 
 const comp9 = new dictComp(
-    ["My favourite class? Oh that's a tough one, since UBC engineering has many challenging, but thought-provoking classes that delve deep into the fundamentals of engineering. I have genuienly found every meaningful (abeit quite tough at times!), so it's diffult to name a single favourite.<br><br> Instead, here's my top 3: <ul><li><b>Math 256: Differential Equations</b></li><li><b>Elec 221: Signals and Systems</b></li><li><b>CPSC 259: Computer Science for Electrical Engineering</b></li></ul>"],
-    defaultT,
+    ["My favourite class? Oh that's a tough one, since UBC engineering has many challenging, but thought-provoking classes that delve deep into the fundamentals of engineering. I genuienly found every one meaningful in some way (abeit quite tough at times!), so it's difficult to name a single favourite.<br><br> Instead, here's my top 3: <ul><li><b>Math 256: Differential Equations</b></li><li><b>Elec 221: Signals and Systems</b></li><li><b>CPSC 259: Computer Science for Electrical Engineering</b></li></ul>"],
 )
 
 const comp10 = new dictComp(
-    ["My software skills include. Lmao none, I just use chatGPT. Check out <a href='/projects'>Projects for more details</a>"],
-    defaultT
+    ["I have dabbled in a whole host of different programming languages. The ones I am most proficient in are Javascript, C and Python — and I mainly strucutre my projects using Object-oriented programming techniques. I have also worked with Java when I first learned coding (I need a quick refresher though to get up to speed!). Rather than listing out all of my software skills, I think it's better to show you! <br /><br /> Check out <a href='/projects'>Projects</a> to see for yourself some of the cool things I made and the skills I picked up on the way."],
+    [["chart.png", "Relative measure of my proficiency with these various languages"]]
 )
+
+const comp11 = new dictComp(
+    ["I am less experienced with hardware, since I only really got a taste of it in my electronics design class. I am working on improving that, but as of right now most of my hardware skills are concentrated in programming microcontrollers (in both C and ARM) and building circuits using integrated components. In the future, I want to venture more into PCB design and creating wirelessly controllable electronics. <br /><br />Check out <a href='/projects'>Projects</a> for some of the group projects I did!"],
+    [["p7.jpg", ""]]
+)
+
+const comp12 = new dictComp(
+    ["At the moment, the Nika confessions bot is my most memorable creation. A quick background (see Projects>Nika for the full story), Nika is a discord bot I made for the UBC engineering 2025 graduating class that would anonymously relay their confessions to a public channel on the server.",
+     "It was the journey of making the bot that I reminisce about the most. I just had an idea one day to make the server a little bit more fun, and the idea excited me enough to ask the administrator of the server if we could implement it. When I got the greenlight, something sparked in me and I worked on it non-stop: watching tutorials, reading documentation and troubleshooting bugs until the bot was made and got online.",
+     "I felt so satisfied looking at the finished product and laughed at the hilarious (but sometimes disturbing) confessions made by my peers!"],
+     [["nika.webp", "You might recognize the name and picture if you're a fan of One Piece!"]]
+)
+
+const comp13 = new dictComp(
+    ["Nowadays I don’t really have much time for movies, so my data set for reference might be a little outdated! Nevertheless my all time favourite movie is <i>A Silent Voice</i>, and second place goes to <i>Parasite</i>. If I had to recommend one of them to someone, I would go with <i>Parasite</i> because of its exquisite directing and phenomenal storyline & message. <i>A Silent Voice</i> has an equally impressive direction and stunning animation, but the story makes you quite emotional.",
+     "Not everyone will like it or be as big of a fan as I am, but if you have a few hours to waste and are ok with crying a bit, then I would definitely still recommend checking it out!"],
+     [["p8.jpeg", "My personal, all time favourite: A silent voice"], ["p9.jpg", "The Oscar winning hit: Parasite"]]
+)
+
+const comp14 = new dictComp(
+    ["No, not always. I always liked non-fiction books and shows, so I originally wanted to be a scientist when I was a kid. However, eventually I realized that what I really liked was contextualizing science and math into practical applications that we could use. Don’t get me wrong, I would still be intrigued if you told me that a black soldier fly larvae can eat 25-500 mg per day, but what would really get me going is how people are using them for organic waste management. ",
+     "I think what really got me interested in engineering was a design competition I competed in highschool with my friends. The goal of the competition is to propose innovative solutions to some of the city’s biggest problems (housing crisis, mental health, etc) using technology. Essentially, this is the core of engineering and the great experience (we were semi-finalists!) is what made me want to pursue this career path."],
+)
+
+const comp15 = new dictComp(
+    ["Gardening! 🌱<br /><br /> I love gardening. When other kids would watch Minecraft videos on youtube, I would watch tutorials on how to grow tomatoes. Currently, I am trying to pursue this hobby with my busy schedule in university by being the garden manager for the engineering student building. "],
+    [["p10.jpg", "A picture of what the garden looks right now - it'll look better in the future I promise!"]]
+)
+
+const comp16 = new dictComp(
+   ["Jackfruit! It’s a relative of Durian, but has a pleasant fruity smell and is oh so delicious."],
+   [["p11.webp", "You're really missing out if you haven't tried out jackfruit at least once in your life!"]]
+)
+
+const comp17 = new dictComp(
+    ["Stereotypical answer, but it's our beautiful campus and the people in it. ^500", 
+     "One thing UBC is known for is our stunning campus (excluding in the winter when it rains everyday) that’s frequently been the production site for a lot of Hollywood movies. ",
+     "I also love how UBC has a massive concentration of extremely talented, hard-working students and staff. It creates a kind of network effect on me: staying in an environment with so many exceptional people motivates me to go beyond the status quo."],
+     [["p12.webp", "Earth Science Building - in my opinion, is one of the best looking builidngs on campus (especially at night!)"]]
+)
+
+const comp18 = new dictComp(
+    ["There’s still a lot I want to do with this site! Initially, I wanted to create a page where I could share my notes & advice for classes I have taken, and a page for my most recent resumes. Alas, since I have been coding, designing, and creating content for the site from scratch and by myself, it’s taken a long time just to get to this point. I am a big proponent of getting out a <b>minimum viable product</b> and improve incrementally rather than trying to achieve perfection.",
+     "I plan to update the site every other week, so check back in a year or so to see a completely revamped site! In fact, if you look into the code, you might be able to find some hidden Easter Eggs for things that are in the pipeline. Until then, thanks for stopping by!"],
+     [["p13.jpg", ""]]
+)
+
 
 // Exporting the actual dict
 export const dict = {
@@ -73,12 +134,12 @@ export const dict = {
     "Where do you study?": comp8,
     "Favourite classes": comp9,
     "Software skills": comp10,
-    "Hardware skills": comp10,
-    "Your proudest achievement?": comp10,
-    "Favourite show": comp10,
-    "Did you always know you wanted to do engineering?": comp10,
-    "Hobbies?": comp10,
-    "How can I contact you?": comp10,
-    "Favourite thing about UBC?": comp10,
-    "Favourite music": comp10,
+    "Hardware skills": comp11,
+    "Your proudest achievement?": comp12,
+    "Favourite movie": comp13,
+    "Did you always know you wanted to do engineering?": comp14,
+    "Hobbies?": comp15,
+    "Favourite fruit": comp16,
+    "Favourite thing about UBC?": comp17,
+    "What's next for the site?": comp18,
 }

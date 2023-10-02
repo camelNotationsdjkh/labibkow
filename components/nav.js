@@ -56,7 +56,9 @@ export default function Navbar(){
                 <ul>
                     <li><Link href="/" className={(router.pathname == '/')? "active": ""} >Home</Link></li>
                     <li><Link href="/projects" className={(router.pathname.includes('/projects'))? "active": ""}>Projects</Link></li>
-                    <li><Link href="/resume" className={(router.pathname.includes('/resume'))? "active": ""}>Resume</Link></li>
+                    <li><Link href="/resume" className={(router.pathname.includes('/resume'))? "active": ""} style={{
+                        display: "none"
+                    }}>Resume</Link></li>
                     <li><Link href="/contact" className={(router.pathname.includes('/contact'))? "active": ""}>Contact</Link></li>
                 </ul>
             </nav>
