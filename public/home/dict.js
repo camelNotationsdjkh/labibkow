@@ -121,11 +121,17 @@ const comp18 = new dictComp(
      [["p13.jpg", ""]]
 )
 
+const comp19 = new dictComp(
+    ["Outside of school, I take part in two on campus extracurriculars: (1) I am part of the electrical subteam of Agrobots, a UBC design team aimed at improving agricultural output using technology. My main responsibilities right now are working with other members to create FMEAs (Failure Modes and Effects Analysis), do torque verification for stepper motors, and implementing reverse polarity protection.",
+     "(2) Lastly, I am the garden manager for the Engineering Student Center patio garden. My job is trying to rejuvenate the garden and make it a place for people to gather around and study/relax. This is the first time I have been in a permanent leadership position and a part of a student government, so there’s a feeling of novelty and pressure, but I hope to live up to the great expectations of the title!"],
+     [["p20.jpg", "The chassis of the Agrobot from previous years! This year we are planning to do a complete redesign of both the mechanical and electrical components."]]
+)
 
 // Exporting the actual dict
 export const dict = {
     "Who am I?": comp1,
     "Favourite Color": comp2,
+    "Extracurriculars?": comp19,
     "Future goals": comp3,
     "Favourite animal": comp4,
     "Workplace experience": comp5,

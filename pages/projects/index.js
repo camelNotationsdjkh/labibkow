@@ -107,6 +107,17 @@ export default function ProjectPage() {
             vis={vis}
             setVis={setVis}
           />
+
+          <Card
+            key="c4"
+            keyVal={3}
+            setKey={setKey}
+            imgLink="worldBig.jpg"
+            text="WW2 Timeline Website"
+            themeColor="#000000"
+            vis={vis}
+            setVis={setVis}
+          />
         </div>
         <ProjHead title="Hardware 🤖" />
         <div className={styles.flexBox}>

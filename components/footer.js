@@ -4,6 +4,7 @@ import styles from "../styles/footer.module.css"
 
 export default function Footer(){
     const imageDim = 34;
+    const currentYear = new Date().getFullYear();
 
     return(
         <>
@@ -38,7 +39,7 @@ export default function Footer(){
 
                 </div>
                 <div className={styles.flex}>
-                    <div>&copy; Labib Kowsar 2023 &trade;</div>
+                    <div>&copy; Labib Kowsar {currentYear} &trade;</div>
                 </div>
             </div>
         </>

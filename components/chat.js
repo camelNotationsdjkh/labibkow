@@ -128,8 +128,7 @@ function ImgComp({caption, theSrc="profile2"}){
                     alt={caption}
                     width={340}
                     height={340} 
-                    placeholder="blur"
-                    />
+                    placeholder="blur"/>
             <p>{caption}</p>
         </>
     )
