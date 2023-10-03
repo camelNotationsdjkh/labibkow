@@ -60,7 +60,7 @@ export default function Chat(){
 
             const divElement = document.createElement("div");
             imgRef.current.firstChild.innerHTML = '';
-            createRoot(divElement).render(disImg.currentg);
+            createRoot(divElement).render(disImg.current);
             imgRef.current.firstChild.appendChild(divElement);
 
         }
