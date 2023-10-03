@@ -11,7 +11,7 @@ export default function Chat(){
     let [strArr, setArr] = useState(dict[curKey].theStrArr); //State that keeps track of what Typed obj should type
     let [isBtnAct, setBtnAct] = useState(0); //Sets the button to active or not
     let sliderEle = [];
-    let disImg = [];
+    const disImg = useRef([]);
     const typedRef = useRef(null);
     const imgRef = useRef(null);
 
@@ -49,10 +49,10 @@ export default function Chat(){
     
         //Re-size the window based on response length
         if(dict[curKey]){
-            disImg = []; //Reset the array
+            disImg.current = []; //Reset the array
 
             for(let i = 0; i < dict[curKey].imgArr.length; i++){
-                disImg.push(
+                disImg.current.push(
                     <ImgComp key={i} caption={dict[curKey].imgArr[i][1]} theSrc={dict[curKey].imgArr[i][0]} />
                 )
             }
@@ -60,7 +60,7 @@ export default function Chat(){
 
             const divElement = document.createElement("div");
             imgRef.current.firstChild.innerHTML = '';
-            createRoot(divElement).render(disImg);
+            createRoot(divElement).render(disImg.currentg);
             imgRef.current.firstChild.appendChild(divElement);
 
         }

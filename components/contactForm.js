@@ -65,7 +65,7 @@ export default function ContactForm(){
         </div>
 
           <div className={styles.note}>
-            <i>*Note: To prevent spam, there's a limit on the number of emails a single IP address can send. Please do not send more than 5 messages at a time. If the message is urgent, please email me directly with the keyword URGENT. Thank you.</i>
+            <i>*Note: To prevent spam, theres a limit on the number of emails a single IP address can send. Please do not send more than 5 messages at a time. If the message is urgent, please email me directly with the keyword URGENT. Thank you.</i>
         </div>
 
         <div className={styles.msgScreen} style={{
