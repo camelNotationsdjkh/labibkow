@@ -1,6 +1,4 @@
-import { useState } from "react";
 import styles from "../styles/card.module.css";
-import Image from 'next/image';
 
 export default function Card({keyVal, ...rest}) {
   //setKey, imgLink, text, themeColor, vis, setVis

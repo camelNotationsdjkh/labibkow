@@ -1,6 +1,6 @@
 //Default img subtitle and images
 const text1 = "Me at Wreck Beach. The sun was in my eyes a bit in the photo, which is why I am squinting!";
-const defaultT = [["profile2.png", text1]];
+const defaultT = [["profile2.webp", text1]];
 
 //A response template for the text to be sent and images
 class dictComp{
@@ -17,7 +17,7 @@ const comp1 = new dictComp(
 
 const comp2 = new dictComp(
     ["Ah, the age old question. For the longest time I would have answered light blue, but now that I have dabbled in color theory and tried out different color palletes, my favourite color is emerald green coupled with black. Which you might of noticed is the color pallette for this site!"],
-    [["p2.png", "The HEX values for emerald green is #2ecc71!"]]
+    [["p2.webp", "The HEX values for emerald green is #2ecc71!"]]
 )
 
 const comp3 = new dictComp(
@@ -26,15 +26,15 @@ const comp3 = new dictComp(
     "For now, most of my goals in the next 1-1.5 years would be to explore my career related interests through personal projects. Nothing teaches like a project, and I would love to explore more into hardware used in digital electronics and software construction. Of course, I will do a ton of coursework directly related to those topics — but it can never replace the frustration, sweat, tears and fun of grinding out to fruition an idea by yourself.^1000",
     "At the moment, I am planning to create a Somatropin injection logger for my little sister that would record the location of the injection site and recommend the next location for the user to inject (click the ‘Somatropin logger’ prompt for more details!).",
     "For short term goals, I am hyper focused these on three goals: <br /><br /><b>(1)</b> Get a CO-OP internship to get hands-on experience in the field and solidify my current engineering skillset. </br /><b>(2)</b>Develop new technical and soft skills while working on improving the electrical design and documentation of the Agrobot (ubc design team project)<br /><b>(1)</b> Transform the engineering student center’s garden unkept and weed filled beds into a botanical paradise before I graduate!"],
-    [["p14.jpg", ""]]
+    [["p14.webp", ""]]
 )
 
 
 const comp4 = new dictComp(
     ["I have a weak spot for ridiculously fast animals. Which is why the <b>peregrine falcon</b> and <b>cheetah</b> are my absolute favorite animals. It baffles me how evolutionary fine-tuned these two animals are to achieve top speeds of 390 km/hr and 100 km/hr respectively. ^1000 <br><br> Octopuses are a close second — I am fascinated by how smart these nine brained (yes you read that right, nine brained!) creatures are. Not to mention how some octopuses can change the color+texture of their skin to almost perfectly mimic its environment. They are just so cool!^1000"],
     [
-        ["pere.jpg", "Fastest animal in the world: the peregrine falcon. Photo by Frank Cone"],
-        ["octo.jpeg", "Octopuses are just so cool! Photo by Pia B"]
+        ["pere.webp", "Fastest animal in the world: the peregrine falcon. Photo by Frank Cone"],
+        ["octo.webp", "Octopuses are just so cool! Photo by Pia B"]
     ]
 )
 
@@ -43,7 +43,7 @@ const comp5 = new dictComp(
     ["Last summer I worked as a student intern in warehousing for Finning, a provider and servicer of (prodominantly) CAT products. While it's not a job related to engineering, I really loved the experience - especially the vibrant company culture and interacting with my co-workers. Seriously, you'll meet some of the most charismatic, nicest, and funniest people at my branch (some of them could go on to host their own comedy show!).",
      "I can't overstate how fun, yet productive, our workplace dynamic was. I had tons of fun, and was comfortable enough to make these two documents: <br /><br />(1) <a href='/resume/finn01.pdf'> A satirical proposal</a> asking my boss for a new vacuum cleaner (under an anonymous pen name of course - though my cover was eventually blown!)<br />(2)<a href='/resume/finn02.pdf'> A set of formulas</a> and instructions for measuring longed coiled items ^1500",
      "The backstory behind these documents is something I will leave for another day, or as a topic for an in-person discussion!"],
-     [["finnImg.jpg", "Finning, celebrating 90 years of being in business. Proud to be apart of it!"]]
+     [["finnImg.webp", "Finning, celebrating 90 years of being in business. Proud to be apart of it!"]]
 
 )
 
@@ -56,13 +56,13 @@ const comp6 = new dictComp(
 const comp7 = new dictComp(
     ["No I don't have any pets at the moment but I did at one time have pet fish. A whole miniature ecosystem in my living when I was 7 years old. But no one gave me the memo that it's possible to over feed them.", "So one fateful morning, I woke to discover that all 12 or so fish in the tank had died. They all recieved proper burials in my backyard.",
      "My family also kept a pet bird, however due to the threat of a certain strain of Avian Influenza sweeping across Asia at the time, we were forced to free the bird into the wild."],
-    [["p5.jpg", "Not an actual photo of the fish we used to have, but the ones we had are pretty similar to the photo"]]
+    [["p5.webp", "Not an actual photo of the fish we used to have, but the ones we had are pretty similar to the photo"]]
     
 )
 
 const comp8 = new dictComp(
     ["I study at the University of British Columbia, Vancouver Campus. I am currenty enrolled in my third year as in the Electrical Engineering program as a co-op student.<br><br> I expect my degree to take 5 years to finish with co-op, so I am set to graduate in 2025-26! "],
-    [["p6.jpg", "A view showcasing IKB library, one of the most renowed buildings at UBC"]]
+    [["p6.webp", "A view showcasing IKB library, one of the most renowed buildings at UBC"]]
     
 )
 
@@ -72,12 +72,12 @@ const comp9 = new dictComp(
 
 const comp10 = new dictComp(
     ["I have dabbled in a whole host of different programming languages. The ones I am most proficient in are Javascript, C and Python — and I mainly strucutre my projects using Object-oriented programming techniques. I have also worked with Java when I first learned coding (I need a quick refresher though to get up to speed!). Rather than listing out all of my software skills, I think it's better to show you! <br /><br /> Check out <a href='/projects'>Projects</a> to see for yourself some of the cool things I made and the skills I picked up on the way."],
-    [["chart.png", "Relative measure of my proficiency with these various languages"]]
+    [["chart.webp", "Relative measure of my proficiency with these various languages"]]
 )
 
 const comp11 = new dictComp(
     ["I am less experienced with hardware, since I only really got a taste of it in my electronics design class. I am working on improving that, but as of right now most of my hardware skills are concentrated in programming microcontrollers (in both C and ARM) and building circuits using integrated components. In the future, I want to venture more into PCB design and creating wirelessly controllable electronics. <br /><br />Check out <a href='/projects'>Projects</a> for some of the group projects I did!"],
-    [["p7.jpg", ""]]
+    [["p7.webp", ""]]
 )
 
 const comp12 = new dictComp(
@@ -90,7 +90,7 @@ const comp12 = new dictComp(
 const comp13 = new dictComp(
     ["Nowadays I don’t really have much time for movies, so my data set for reference might be a little outdated! Nevertheless my all time favourite movie is <i>A Silent Voice</i>, and second place goes to <i>Parasite</i>. If I had to recommend one of them to someone, I would go with <i>Parasite</i> because of its exquisite directing and phenomenal storyline & message. <i>A Silent Voice</i> has an equally impressive direction and stunning animation, but the story makes you quite emotional.",
      "Not everyone will like it or be as big of a fan as I am, but if you have a few hours to waste and are ok with crying a bit, then I would definitely still recommend checking it out!"],
-     [["p8.jpeg", "My personal, all time favourite: A silent voice"], ["p9.jpg", "The Oscar winning hit: Parasite"]]
+     [["p8.webp", "My personal, all time favourite: A silent voice"], ["p9.webp", "The Oscar winning hit: Parasite"]]
 )
 
 const comp14 = new dictComp(
@@ -100,7 +100,7 @@ const comp14 = new dictComp(
 
 const comp15 = new dictComp(
     ["Gardening! 🌱<br /><br /> I love gardening. When other kids would watch Minecraft videos on youtube, I would watch tutorials on how to grow tomatoes. Currently, I am trying to pursue this hobby with my busy schedule in university by being the garden manager for the engineering student building. "],
-    [["p10.jpg", "A picture of what the garden looks right now - it'll look better in the future I promise!"]]
+    [["p10.webp", "A picture of what the garden looks right now - it'll look better in the future I promise!"]]
 )
 
 const comp16 = new dictComp(
@@ -118,13 +118,13 @@ const comp17 = new dictComp(
 const comp18 = new dictComp(
     ["There’s still a lot I want to do with this site! Initially, I wanted to create a page where I could share my notes & advice for classes I have taken, and a page for my most recent resumes. Alas, since I have been coding, designing, and creating content for the site from scratch and by myself, it’s taken a long time just to get to this point. I am a big proponent of getting out a <b>minimum viable product</b> and improve incrementally rather than trying to achieve perfection.",
      "I plan to update the site every other week, so check back in a year or so to see a completely revamped site! In fact, if you look into the code, you might be able to find some hidden Easter Eggs for things that are in the pipeline. Until then, thanks for stopping by!"],
-     [["p13.jpg", ""]]
+     [["p13.webp", ""]]
 )
 
 const comp19 = new dictComp(
     ["Outside of school, I take part in two on campus extracurriculars: (1) I am part of the electrical subteam of Agrobots, a UBC design team aimed at improving agricultural output using technology. My main responsibilities right now are working with other members to create FMEAs (Failure Modes and Effects Analysis), do torque verification for stepper motors, and implementing reverse polarity protection.",
      "(2) Lastly, I am the garden manager for the Engineering Student Center patio garden. My job is trying to rejuvenate the garden and make it a place for people to gather around and study/relax. This is the first time I have been in a permanent leadership position and a part of a student government, so there’s a feeling of novelty and pressure, but I hope to live up to the great expectations of the title!"],
-     [["p20.jpg", "The chassis of the Agrobot from previous years! This year we are planning to do a complete redesign of both the mechanical and electrical components."]]
+     [["p20.webp", "The chassis of the Agrobot from previous years! This year we are planning to do a complete redesign of both the mechanical and electrical components."]]
 )
 
 // Exporting the actual dict
