@@ -41,7 +41,7 @@ const comp4 = new dictComp(
 
 const comp5 = new dictComp(
     ["Last summer I worked as a student intern in warehousing for Finning, a provider and servicer of (prodominantly) CAT products. While it's not a job related to engineering, I really loved the experience - especially the vibrant company culture and interacting with my co-workers. Seriously, you'll meet some of the most charismatic, nicest, and funniest people at my branch (some of them could go on to host their own comedy show!).",
-     "I can't overstate how fun, yet productive, our workplace dynamic was. I had tons of fun, and was comfortable enough to make these two documents: <br /><br />(1) <a href='/resume/finn01.pdf'> A satirical proposal</a> asking my boss for a new vacuum cleaner (under an anonymous pen name of course - though my cover was eventually blown!)<br />(2)<a href='www.google.ca'> A set of formulas</a> and instructions for measuring longed coiled items ^1500",
+     "I can't overstate how fun, yet productive, our workplace dynamic was. I had tons of fun, and was comfortable enough to make these two documents: <br /><br />(1) <a href='/resume/finn01.pdf'> A satirical proposal</a> asking my boss for a new vacuum cleaner (under an anonymous pen name of course - though my cover was eventually blown!)<br />(2)<a href='/resume/finn02.pdf'> A set of formulas</a> and instructions for measuring longed coiled items ^1500",
      "The backstory behind these documents is something I will leave for another day, or as a topic for an in-person discussion!"],
      [["finnImg.jpg", "Finning, celebrating 90 years of being in business. Proud to be apart of it!"]]
 
