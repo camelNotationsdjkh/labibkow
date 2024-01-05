@@ -29,7 +29,6 @@ export default function Chat(){
         );
     }
 
-
     /*Use effect hook is used for adding dynamic feautres
     Like API fetch, DOM mnipulation, and setting up event listeners.
     We have to use the hook here because strArr state changes and 
@@ -46,7 +45,6 @@ export default function Chat(){
         
         const typed = new Typed(typedRef.current, options);
         
-    
         //Re-size the window based on response length
         if(dict[curKey]){
             disImg.current = []; //Reset the array
@@ -57,7 +55,6 @@ export default function Chat(){
                 )
             }
             
-
             const divElement = document.createElement("div");
             imgRef.current.firstChild.innerHTML = '';
             createRoot(divElement).render(disImg.current);
