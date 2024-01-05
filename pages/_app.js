@@ -9,7 +9,7 @@ export default function App({ Component, pageProps }) {
     <>
       <Head>
         <title>Labib Kowsar</title>
-        <meta name='description' content='Labib Kowsar personal website. UBC engineering.'></meta>
+        <meta name='description' content="Labib Kowsar's personal website. An electrical engineering student at UBCV, this site showcases his project portfolio, resumes, and a way to contact him."></meta>
         <meta name='author' content='Labib Kowsar'></meta>
         <link rel="apple-touch-icon" sizes="180x180" href="/fav/apple-touch-icon.png" />
         <link rel="icon" type="image/png" sizes="32x32" href="/fav/favicon-32x32.png" />
