@@ -1,5 +1,5 @@
 import Card from "@/components/card";
-import styles from "styles/project.module.css";
+import styles from "@/styles/project.module.css";
 import { useState } from "react";
 import DefCard from "@/components/detailCard";
 
@@ -167,4 +167,3 @@ function ProjHead({title}){
     </>
   )
 }
-

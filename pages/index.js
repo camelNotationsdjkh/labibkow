@@ -69,7 +69,7 @@ export default function Home(){
       };
 
 
-  }, [strArr]);
+  }, [curKey, strArr]);
 
   return (
       <>
@@ -137,6 +137,5 @@ function BtnComp({ keyVal, onClick, isActive }){
       </>
   )
 }
-
 
 

@@ -1,4 +1,4 @@
-import styles from "/styles/arrBtn.module.css"
+import styles from "@/styles/arrBtn.module.css";
 
 export default function ArrBtn({ content, color, hoverColor , btnLink, newWin}) {
     const buttonStyle = {

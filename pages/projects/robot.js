@@ -1,6 +1,6 @@
 import StnBtn from "@/components/stnBtn";
 import Image from "next/image";
-import styles from "styles/reflow.module.css";
+import styles from "@/styles/reflow.module.css";
 
 export default function RobotPage(){
     return (
@@ -202,4 +202,3 @@ function ImgBox({link, ...rest}){
         </>
     )
 }
-

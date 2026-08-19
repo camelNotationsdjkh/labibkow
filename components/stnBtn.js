@@ -1,4 +1,4 @@
-import styles from '/styles/stnBtn.module.css'
+import styles from "@/styles/stnBtn.module.css";
 
 export default function StnBtn({text, link, newWin}){
     return (

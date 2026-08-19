@@ -1,5 +1,5 @@
 import ArrBtn from "./arrBtn";
-import styles from "/styles/defCard.module.css"
+import styles from "@/styles/defCard.module.css";
 import Image from 'next/image';
 
 export default function DefCard({theDict,vis, setVis}){
@@ -54,4 +54,3 @@ export default function DefCard({theDict,vis, setVis}){
             </div>
     )
 }
-
