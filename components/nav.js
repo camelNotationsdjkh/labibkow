@@ -5,21 +5,14 @@ import { useState, useEffect } from "react"
 export default function Navbar(){
     const router = useRouter();
 
-    //Toggles the navbar in phone mode
-    const [isActive, setActive] = useState(false);
+    // Tracks whether viewport is in mobile mode.
+    const [isMobile, setIsMobile] = useState(false);
+    // Toggles the navbar only in mobile mode.
+    const [isMenuOpen, setMenuOpen] = useState(false);
 
-    //Checks for resizing
-    const [windowSize, setWindowSize] = useState({
-        width: undefined,
-        height: undefined,
-    });
-    
     useEffect(() => {
         function handleResize() {
-          setWindowSize({
-            width: window.innerWidth,
-            height: window.innerHeight,
-          });
+          setIsMobile(window.innerWidth < 900);
         }
     
         // Add event listener for window resize
@@ -31,12 +24,6 @@ export default function Navbar(){
         // Remove event listener on cleanup
         return () => window.removeEventListener('resize', handleResize);
       }, []);
-    
-    //Code to execute on window change
-    useEffect(() => {
-        if(windowSize.width >= 900) setActive(false);
-        else setActive(true);
-      }, [windowSize]);
 
     return (
         <>
@@ -46,13 +33,15 @@ export default function Navbar(){
         }
         <div className="navHead">
             <div className="logo">labibkow<span className="green">.</span></div>
-            <div className="hamburger" onClick={() => setActive(!isActive)}>
+            <div className="hamburger" onClick={() => {
+                if (isMobile) setMenuOpen(!isMenuOpen);
+            }}>
                 <div className="line"></div>
                 <div className="line"></div>
                 <div className="line"></div>
             </div>
         
-            <nav className={isActive?"hideNav":""}>
+            <nav className={(isMobile && !isMenuOpen) ? "hideNav" : ""}>
                 <ul>
                     <li><Link href="/" className={(router.pathname == '/')? "active": ""} >Home</Link></li>
                     <li><Link href="/projects" className={(router.pathname.includes('/projects'))? "active": ""}>Projects</Link></li>
